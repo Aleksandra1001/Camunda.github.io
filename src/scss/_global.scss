@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "GilroyLight";
+}
+.container {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 30px;
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+  &__item {
+    &-phone {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__link {
+    font-size: 16px;
+    line-height: 20px;
+    color: $accent_color;
+    text-decoration: none;
+    font-family: $gilroy_extra_bold;
+    &-logo {
+      width: 60px;
+      justify-self: start;
+      img {
+        width: 100%;
+      }
+    }
+    &-icon {
+      width: 20px;
+      margin-right: 10px;
+      img {
+        width: 100%;
+      }
+    }
+    &-number {
+      font-size: 16px;
+      line-height: 18px;
+      color: $accent_color;
+    }
+  }
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+}
+.divider {
+  height: 0px;
+  margin: 20px 0 20px 0;
+  border: 1px solid $main-color;
+}
+
+.button {
+  padding: 0 20px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $gilroy_extra_bold;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  &__default {
+    background: $main-color;
+    color: $btn_color_default;
+    box-shadow: inset 0px -2px 7px rgba(0, 41, 185, 0.4);
+    border: none;
+  }
+  &__outline {
+    background: $text_color;
+    color: $btn_color_outline;
+    border: 2px solid $btn_color_outline;
+  }
+}
+
+.text {
+  font-family: $gilroy_light;
+  font-size: 16px;
+  line-height: 18px;
+  color: $accent_color;
+  &-light {
+    color: $text_color;
+    align-self: center;
+  }
+  &-dark {
+    font-family: $gilroy_extra_bold;
+  }
+}
+
+.title {
+  font-family: $montserrat_alternates_bold;
+  font-size: 42px;
+  line-height: 51px;
+  font-weight: 800;
+  color: $accent_color;
+  span {
+    font-family: $montserrat_alternates_bold;
+    color: $main-color;
+  }
+  &_fz18 {
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.5);
+    &_light {
+      color: $accent_color;
+    }
+  }
+  &_fz24 {
+    font-size: 24px;
+    line-height: 29px;
+    &_light {
+      color: $text_color;
+      text-align: center;
+    }
+  }
+}
