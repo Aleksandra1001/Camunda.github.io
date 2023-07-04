@@ -57,10 +57,15 @@
   width: 100%;
   height: 60px;
 }
+
 .divider {
   height: 0px;
   margin: 20px 0 20px 0;
   border: 1px solid $main-color;
+
+  &_clear {
+    margin: 0;
+  }
 }
 
 .button {
@@ -74,11 +79,15 @@
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
+  position: relative;
   transition: 0.4s;
+  text-decoration: none;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
   &__default {
     background: $main-color;
     color: $btn_color_default;
-    box-shadow: inset 0px -2px 7px rgba(0, 41, 185, 0.4);
     border: none;
   }
   &__outline {
@@ -93,11 +102,11 @@
   font-size: 16px;
   line-height: 18px;
   color: $accent_color;
-  &-light {
+  &_light {
     color: $text_color;
     align-self: center;
   }
-  &-dark {
+  &_dark {
     font-family: $gilroy_extra_bold;
   }
 }
@@ -112,7 +121,7 @@
     font-family: $montserrat_alternates_bold;
     color: $main-color;
   }
-  &_fz18 {
+  &_small {
     font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
@@ -121,7 +130,7 @@
       color: $accent_color;
     }
   }
-  &_fz24 {
+  &_medium {
     font-size: 24px;
     line-height: 29px;
     &_light {

@@ -8,19 +8,16 @@
         &_color {
             background: $main-color;
             padding: 35px 30px;
-            &:nth-child(1) {
-                .contacts__item {
-                    padding-top: 82px;
-                }
-                
-            }
         }
     }
     &__item {
         position: relative;
-        padding-top: 35px;
+        margin-bottom: 35px;
     }
     &__title {
+        margin-bottom: 60px;
+    }
+    &__subtitle {
         margin-bottom: 25px;
     }
     &__icon{
@@ -28,7 +25,7 @@
         text-align: center;
     }
     a {
-        padding: 27px 0 0 30px;
+        padding: 0 0 0 30px;
         text-decoration: none;  
     }
     &__number {
