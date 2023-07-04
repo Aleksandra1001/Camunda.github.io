@@ -3,7 +3,7 @@
     font-size: 42px;
     line-height: 51px;
     font-weight: 800;
-    color: $color_2;
+    color: $accent_color;
     span {
         color: $main-color;
     }
@@ -13,7 +13,7 @@
         text-transform: uppercase;
         color: rgba(51, 51, 51, 0.5);
         &_light {
-            color: $color_1;
+            color: $accent_color;
         }
 
     }
@@ -21,7 +21,7 @@
         font-size: 24px;
         line-height: 29px;
         &_light {
-            color: $color_1;
+            color: $text_color;
             text-align: center;
         }
     }

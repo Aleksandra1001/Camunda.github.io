@@ -25,7 +25,7 @@
     &__link {
         font-size: 16px;
         line-height: 20px;
-        color: $color_2;
+        color: $accent_color;
         text-decoration: none;
         &-logo {
             width: 60px;
@@ -44,47 +44,7 @@
         &-number {
             font-size: 16px;
             line-height: 18px;
-            color: $color_2;
+            color: $accent_color;
         }
     }
-
-
-// text
-// position: absolute;
-// width: 183px;
-// height: 20px;
-// left: 714px;
-// top: 50px;
-// font-family: 'Gilroy';
-// font-style: normal;
-// font-weight: 800;
-// font-size: 16px;
-// line-height: 20px;
-// color: #333333;
-
-
-// telefon
-// position: absolute;
-// width: 133px;
-// height: 18px;
-// left: 1157px;
-// top: 51px;
-// font-family: 'Gilroy';
-// font-style: normal;
-// font-weight: 300;
-// font-size: 16px;
-// line-height: 18px;
-// color: #333333;
-
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -8,14 +8,17 @@
         &_color {
             background: $main-color;
             padding: 35px 30px;
+            &:nth-child(1) {
+                .contacts__item {
+                    padding-top: 82px;
+                }
+                
+            }
         }
     }
     &__item {
         position: relative;
         padding-top: 35px;
-        &:nth-child(1) {
-            padding-top: 82px;
-        }
     }
     &__title {
         margin-bottom: 25px;
@@ -26,10 +29,7 @@
     }
     a {
         padding: 27px 0 0 30px;
-        text-decoration: none;
-        &:hover {
-            color: red;
-        }   
+        text-decoration: none;  
     }
     &__number {
         padding-top: 15px;
@@ -48,13 +48,13 @@
             padding: 17px 20px;
             font-size: 16px;
             background-color: $main-color;
-            border: 2px solid $color_1;
+            border: 2px solid $text_color;
             border-radius: 5px;
         }
         label {
             margin-top: 20px;
             font-size: 16px;
-            color: $color_1;
+            color: $text_color;
         }
     }
     &__button {
