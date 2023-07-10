@@ -1,25 +1,70 @@
 // @media (max-width: 1440px) {
-//   1201-1440
+//   0-1440
 // } если контейнер больше 1200px
 // (если контейнер вылазит за текущий размер экрана)
 
 // @media (max-width: 1200px) {
+    // 0-1200
 //   1025-1200
+    // container: 960px
 // }
 
 // @media (max-width: 1024px) {
 //  0-1024
-//  768-1024
+//  769-1024
+    // container: 700px
 // }
 
-// @media (max-width: 767px) {
-//   481-767
+// @media (max-width: 768px) {
+    // 0 -768
+//   481-768
+    // container: 420px
 // }
 
 // @media (max-width: 480px) {
+    // 0-480
 //   320-480
+    // container max-width: 100%
 // }
 
 @media (max-width: 1200px) {
-    
+    .container {
+        max-width: 960px;
+    }
+    .header {
+        &__link {
+            font-size: 14px;
+        }
+    }
+    .title {
+        font-size: 40px;
+        &_small {
+            font-size: 16px;
+        }
+        &_medium {
+            font-size: 22px;
+        }
+    }
+    .promo {
+        &__wrapper {
+            column-gap: 100px;
+        }
+    }
+    .about {
+        &__content {
+            grid-template-columns: 420px 540px;
+        }
+        &__img {
+            left: 330px;
+        }
+    }
+    .usage {
+        &_list {
+            grid-template-columns: 290px 410px 260px;
+            &__item {
+                margin-left: 45px;
+            }
+        }
+    }
+
 }
