@@ -259,6 +259,7 @@
     }
     &__button {
         margin-top: 30px;
+        width: max-content;
     }
 }
 .contacts {
@@ -293,8 +294,23 @@
     &__number {
         padding-top: 15px;
     }
-    &-form {
-       height: max-content;
+
+}
+.contacts-form {
+    background: $main-color;
+    padding: 30px;
+    height: max-content;
+    border-radius: 5px;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        gap: 20px;
     }
     &__input {
         display: flex;
@@ -311,7 +327,6 @@
             border-radius: 5px;
         }
         label {
-            margin-top: 30px;
             font-size: 16px;
             color: $text_color;
         }
@@ -319,7 +334,7 @@
     &__button {
         display: block;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 10px;
     }
 }
 .footer {
