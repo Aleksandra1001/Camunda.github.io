@@ -1,6 +1,39 @@
 @import 'base/variables';
 @import 'base/mixins';
-@import 'base/fonts';
-@import 'global';
-@import 'general';
-@import 'media';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+.container {
+    position: relative;
+    max-width: 1140px; 
+    margin: 0 auto;
+}
+.header {
+    position: relative;
+}
+.nav {
+    position: absolute;
+	width: 100%;
+	height: 60px;
+}
+.divider {
+    height: 0px;
+    margin: 20px 0 20px 0;
+    border: 1px solid $main-color;
+}
+
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/titles';
+@import 'blocks/buttons';
+@import 'blocks/text';
+@import 'blocks/about';
+@import 'blocks/usage';
+@import 'blocks/education';
+@import 'blocks/tool';
+@import 'blocks/simulator';
+@import 'blocks/contacts';
+@import 'blocks/footer';

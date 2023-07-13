@@ -1,0 +1,42 @@
+.footer {
+    margin-top: 20px;
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__logo {
+        width: 154px;
+        img {
+            width: 100%;
+        }
+    }
+    &__about {
+        a {
+            text-decoration: none;
+            margin-right: 40px;
+        }
+ 
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        width: 20px;
+        margin-right: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        &-number {
+            color: $color_2;
+        }
+    }
+
+
+    
+
+}
