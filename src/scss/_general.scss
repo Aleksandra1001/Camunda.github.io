@@ -1,0 +1,376 @@
+.promo {
+    &__wrapper {
+        padding-top: 45px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 540px;
+        column-gap: 121px;
+    }
+    &__descr {
+        align-self: center;
+        .text {
+            margin-top: 30px;
+        }
+    }
+    &__button {
+        margin-top: 30px;
+        width: max-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    &__img {
+        width: 500px;
+        img {
+            width: 100%;
+        }
+    }
+}
+.rectangle {
+    min-height: 180px;
+    margin-top: 30px;
+    padding: 35px 0 25px 0;
+    background-color: $main-color;
+    &__title {    
+        text-align: start;
+    }
+    &__list {
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(4, 255px);
+        grid-template-rows: 75px;
+        column-gap: 45px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 70px 170px;
+        column-gap: 15px;
+    }
+    &__icon {
+        width: 70px;
+        img {
+            width: 100%;
+        }
+    }
+}
+.about {
+    margin-top: 100px;
+    &__content {
+        position: relative;
+        display: grid;
+        grid-template-columns: 540px 630px;
+    }
+    &__text {
+        margin-top: 30px;
+    }
+    &__button {
+        margin-top: 30px;
+        width: 220px;
+    }
+    &__img {
+        position: absolute;
+        width: 630px;
+        left: 508px;
+        z-index: -1;
+        img {
+            width: 100%;
+        }
+    }
+}
+.usage {
+    margin-top: 100px;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &-list{
+        display: grid;
+        grid-template-columns: 328px 468px 304px;
+        justify-content: space-between;
+        &__item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $main-color;
+            border-top: transparent;
+            border-left: transparent;
+            border-radius: 0 5px 5px 5px;
+            margin-left: 55px;
+            &:nth-child(1) {
+                .usage-list__content {
+                    margin-left: 108px;
+                }
+                .usage-list__img {
+                    transform: translateX(-53px);
+                }
+            }
+            &:nth-child(2) {
+                .usage-list__content {
+                    margin-left: 93px;
+                }
+                .usage-list__img {
+                    transform: translateX(-71px);
+                }
+            }
+            &:nth-child(3) {
+                .usage-list__content {
+                    margin-left: 111px;
+                }
+                .usage-list__img {
+                    transform: translateX(-53px);
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 30px;
+                left: 0px;
+                bottom: -1px;
+                border-radius: 0 0 0 5px;
+                border-left: 1px solid $main-color;
+                border-bottom: transparent; 
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 30px;
+                height: 20px;
+                right: -1px;
+                top: 0px;
+                border-radius: 0 5px 0 0 ;
+                border-top: 1px solid $main-color;
+                border-right: transparent;  
+            }
+        }
+        &__img {
+            position: absolute;
+            top: 54px;
+            img {
+                width: 100%;
+            }  
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 15px;
+        }
+        &__title {
+            margin: 30px 0 20px 0;
+            color: black;
+            text-transform: capitalize;
+        }
+        &__orders {
+            display: flex;
+        }
+        &__order {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 73px;
+            text-align: center;
+        }
+        &__icon {
+            margin-bottom: 5px;
+        }
+    }
+    &__title_medium {
+        margin: 40px 0 20px 0;
+    }
+    &__block {
+        display: grid;
+        grid-template-columns: 110px 797px 153px;
+        grid-template-rows: 110px;
+        column-gap: 20px;
+        padding: 20px 0;
+        border-top: 1px solid $main-color;
+        &:last-child {
+            border-bottom: 1px solid $main-color;
+        }
+    }
+    &__img {
+        width: 110px;
+        padding-left: 20px;
+        align-self: center;
+        img {
+            width: 100%;
+        }
+    }
+    &__about {
+        align-self: center;
+    }
+    &__subtitle {
+        font-family: $gilroy_extra_bold;
+        margin-bottom: 10px;
+    }
+    &__btn {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10px;
+    }
+    &__button {
+        width: 100%;
+    }
+}
+.education {
+    min-height: 307px;
+    margin-top: 100px;
+    &__list {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 400px 242px 182px 182px;
+        grid-template-rows: 1fr;
+        column-gap: 45px;
+    }
+    &__button {
+        margin-top: 30px;
+    }
+    &__subtitle {
+        font-family: $gilroy_extra_bold;
+        margin-bottom: 10px;
+    }
+    &__wrapper {
+        list-style-type: none;
+        padding-left: 25px;
+        margin-bottom: 10px;
+        li {
+			position: relative;
+			margin-bottom: 10px;
+            text-decoration: underline;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				left: -28px;
+				top: -2px;
+				width: 20px;
+				height: 20px;
+				background: url(../../img/icons/check.svg) center center/cover no-repeat;
+			}
+		}
+    }
+}
+.softs {
+    &__block {
+        margin-top: 100px;
+    }
+    &__text {
+        margin-top: 40px;
+    }
+    &__button {
+        margin-top: 30px;
+        width: max-content;
+    }
+}
+.contacts {
+    margin: 100px 0;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 660px 480px;
+    }
+    &__list {
+        &_color {
+            background: $main-color;
+            padding: 30px;
+        }
+    }
+    &__item {
+        position: relative;
+        margin-bottom: 35px;
+    }
+    &__title {
+        margin-bottom: 60px;
+    }
+    &__subtitle {
+        margin-bottom: 25px;
+    }
+    &__icon{
+        position: absolute;
+        text-align: center;
+    }
+    a {
+        padding: 0 0 0 30px;  
+    }
+    &__number {
+        padding-top: 15px;
+    }
+
+}
+.contacts-form {
+    background: $main-color;
+    padding: 30px;
+    height: max-content;
+    border-radius: 5px;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        gap: 20px;
+    }
+    &__input {
+        display: flex;
+        flex-direction: column;
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 14px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            color: $text_color;
+            background-color: $main-color;
+            border: 1px solid $text_color;
+            border-radius: 5px;
+        }
+        label {
+            font-size: 16px;
+            color: $text_color;
+        }
+    }
+    &__button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+.footer {
+    padding: 40px 0 40px 0;
+    border-top: 1px solid $main-color;
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 154px;
+        img {
+            width: 100%;
+        }
+    }
+    &__about {
+        a {
+            margin-right: 40px;
+        }
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        width: 20px;
+        margin-right: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        &-number {
+            color: $accent_color;
+        }
+    }
+}
