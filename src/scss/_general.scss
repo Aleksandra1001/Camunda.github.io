@@ -179,7 +179,6 @@
     &__block {
         display: grid;
         grid-template-columns: 110px 797px 153px;
-        grid-template-rows: 110px;
         column-gap: 20px;
         padding: 20px 0;
         border-top: 1px solid $main-color;
@@ -205,7 +204,6 @@
     &__btn {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
         row-gap: 10px;
     }
     &__button {

@@ -16,6 +16,9 @@ body {
 
 .header {
   padding-top: 30px;
+  &__logo {
+    display: none;
+  }
   &__menu {
     display: flex;
     justify-content: space-between;
@@ -36,7 +39,6 @@ body {
     font-family: $gilroy_extra_bold;
     &-logo {
       width: 60px;
-      // justify-self: start;
       img {
         width: 100%;
       }

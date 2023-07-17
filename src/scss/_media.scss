@@ -74,48 +74,58 @@
 
 @media (max-width: 480px) {
   .container {
-      max-width: 100%;
-      padding: 0 15px;
+    max-width: 100%;
+    padding: 0 15px;
   }
   .header {
-      &__menu {
-          position: fixed;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          top: 0;
-          left: -100%;
-          width: 85%;
-          height: 100vh;
-          padding: 20px 15px;
-          background-color: $main-color;
-          transition: 0.5s all;
-          &_active {
-            left: 0;
-          }
-      }
-      &__item {
-           width: 100%;
-          text-align: center;
-          padding: 5px 0;
-          border: none;
-          margin: 5px 0;
-          &-phone {
-              justify-content: center;
-          }
-      }
-      &__link {
-          display: block;
-          font-size: 14px;
-          &-logo {
-            display: none;
-          }
+    &__logo {
+      display: block;
+      position: absolute;
+      top: -20px;
+      width: 70px;
+      img {
+        width: 100%;
       }
     }
+    &__menu {
+      position: fixed;
+      z-index: 1000;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: -100%;
+      width: 85%;
+      height: 100vh;
+      padding: 20px 15px;
+      background-color: $text_color;
+      transition: 0.5s all;
+      &_active {
+        left: 0;
+      }
+    }
+    &__item {
+      width: 100%;
+      text-align: center;
+      padding: 5px 0;
+      border: none;
+      margin: 5px 0;
+      &-phone {
+        justify-content: center;
+      }
+    }
+    &__link {
+      font-size: 14px;
+      &-logo {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
   .hamburger {
     display: block;
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 20px;
     transform: translateY(-50%);
     width: 26px;
@@ -166,13 +176,11 @@
     }
   }
   .button {
-    height: 35px;
-    font-size: 12px;
-    padding: 0 10px;
+    height: 50px;
   }
   .promo {
     &__wrapper {
-      padding-top: 0;
+      padding-top: 50px;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
       row-gap: 20px;
@@ -238,12 +246,12 @@
       margin-bottom: 10px;
     }
     &-list {
-      grid-template-columns: 300px;
+      grid-template-columns: 1fr;
       gap: 15px;
       &__item {
         &:nth-child(1) {
           .usage-list__content {
-            margin-left: 50px;
+            margin-left: 40px;
           }
           .usage-list__img {
             transform: translateX(-55px);
@@ -251,7 +259,7 @@
         }
         &:nth-child(2) {
           .usage-list__content {
-            margin-left: 25px;
+            margin-left: 40px;
           }
           .usage-list__img {
             transform: translateX(-55px);
@@ -259,7 +267,7 @@
         }
         &:nth-child(3) {
           .usage-list__content {
-            margin-left: 60px;
+            margin-left: 40px;
           }
           .usage-list__img {
             transform: translateX(-55px);
@@ -272,26 +280,34 @@
           width: 55%;
         }
       }
+      &__title {
+        margin: 10px 0;
+      }
       &__icon {
         width: 35px;
       }
       &__order {
         width: 60px;
       }
+      &__text {
+        font-size: 12px;
+        line-height: 14px;
+      }
     }  
     &__title_medium {
       margin: 20px 0 10px 0;
     }
     &__block {
-      grid-template-columns: 80px 1fr;
-      grid-template-rows: 1fr 55px;
+      grid-template-columns: 1fr;
       padding: 10px 0;
       column-gap: 10px;
     }
+    &__list {
+      display: flex;
+    }
     &__img {
       width: 80px;
-      justify-self: start;
-      padding-left: 0;
+      margin: 0 10px 0 0;
     }
     &__subtitle {
       margin: 10px 0;
@@ -300,10 +316,7 @@
 
     &__btn {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      gap: 10px;
-      padding-top: 20px;
-      justify-self: start;
+      margin: 20px 0 0 0;
     }
   }
   .education {
@@ -357,7 +370,6 @@
   .footer {
     padding: 30px 0;
     &__info {
-      height: 100px;
       display: flex;
       flex-direction: column;
     }
@@ -367,7 +379,8 @@
     &__about {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
