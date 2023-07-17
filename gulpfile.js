@@ -72,7 +72,7 @@ function scripts() {
       plumber({ errorHandler: notify.onError("Error: <%= error.message %>") })
     )
     .pipe(concat("main.min.js"))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(dest(path.dist.js))
     .pipe(browserSync.stream());
 }
