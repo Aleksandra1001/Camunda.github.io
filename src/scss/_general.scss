@@ -65,7 +65,7 @@
     }
     &__button {
         margin-top: 30px;
-        width: 220px;
+        // width: 220px;
     }
     &__img {
         position: absolute;
@@ -236,7 +236,7 @@
         li {
 			position: relative;
 			margin-bottom: 10px;
-            text-decoration: underline;
+            text-decoration: none;
 			&:before {
 				content: "";
 				display: block;
@@ -338,7 +338,7 @@
     }
 }
 .footer {
-    padding: 40px 0 40px 0;
+    padding: 40px 0;
     border-top: 1px solid $main-color;
     &__info {
         display: flex;
@@ -351,10 +351,10 @@
             width: 100%;
         }
     }
-    &__about {
-        a {
-            margin-right: 40px;
-        }
+    &__about { 
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
     }
     &__phone {
         display: flex;
