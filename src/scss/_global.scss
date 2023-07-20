@@ -13,8 +13,12 @@ body {
   margin: 0 auto;
 }
 
+
 .header {
   padding-top: 30px;
+  &__logo {
+    display: none;
+  }
   &__menu {
     display: flex;
     justify-content: space-between;
@@ -35,7 +39,6 @@ body {
     font-family: $gilroy_extra_bold;
     &-logo {
       width: 60px;
-      justify-self: start;
       img {
         width: 100%;
       }
@@ -61,6 +64,10 @@ body {
   height: 60px;
 }
 
+.hamburger {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -68,6 +75,7 @@ a {
 .button {
   padding: 0 20px;
   height: 50px;
+  width: max-content;
   border-radius: 5px;
   display: flex;
   justify-content: center;
