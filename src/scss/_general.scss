@@ -178,7 +178,7 @@
     }
     &__block {
         display: grid;
-        grid-template-columns: 110px 797px 153px;
+        grid-template-columns: 950px 153px;
         column-gap: 20px;
         padding: 20px 0;
         border-top: 1px solid $main-color;
@@ -186,9 +186,13 @@
             border-bottom: 1px solid $main-color;
         }
     }
+    &__list {
+        display: flex;
+        gap: 20px;
+        margin-left: 20px;
+    }
     &__img {
         width: 110px;
-        padding-left: 20px;
         align-self: center;
         img {
             width: 100%;
@@ -203,8 +207,7 @@
     }
     &__btn {
         display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 10px;
+        align-content: space-between;
     }
     &__button {
         width: 100%;
